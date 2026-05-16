@@ -6,7 +6,7 @@ import { WritingPage } from './pages/WritingPage'
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route element={<SiteLayout />}>
           <Route index element={<HomePage />} />
